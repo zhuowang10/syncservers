@@ -87,7 +87,7 @@ class BaseSync:
         relative_sync_path = sync_path[len(base_sync_path):].strip(os.sep)
         return sync_server.get_sync_url(base_dst_path, relative_sync_path)
 
-    async def _add_to_sync(self, base_sync_path, sync_path, is_folder, *args, **kwargs):
+    async def _add_to_sync(self, base_sync_path, sync_path, is_folder, **kwargs):
         """
         push rsync task to queue
         """

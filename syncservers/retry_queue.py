@@ -16,7 +16,7 @@ class RetryQueue:
 
         self._retry_queue = deque()
 
-    async def add_retries_to_sync(self, *args, **kwargs):
+    async def add_retries_to_sync(self, **kwargs):
         """
         re-queue tasks in retry queue
         """
