@@ -5,7 +5,7 @@ A use case is to sync files to multiple servers without setting up cloud costly.
 
 Inotify is leveraged to monitor files changes, asynclcron is to run cron tasks, and rsync is to sync files.
 
-A recursive_watch class, based on asyncinotify example and improved, is included to recursively monitor a folder tree.
+The inotify recursive watch class has been moved/contributed to [asyncinotify](https://github.com/ProCern/asyncinotify).
 
 ## setup dev env
 ```bash
@@ -23,9 +23,6 @@ pip install asynclcron
 ```bash
 ## run test
 python3 -m unittest
-
-## only run a package/file
-python3 -m unittest tests.syncservers.test_recursive_watcher
 ```
 
 ## rsyncd
