@@ -2,11 +2,10 @@ from pathlib import Path
 import os
 import asyncio
 import logging
-from asyncinotify import Mask
+from asyncinotify import Mask, RecursiveWatcher
 from syncservers.config import Config
 from syncservers.async_command import async_rsync, get_rsync_path
 from syncservers.retry_queue import RetryQueue
-from syncservers.recursive_watcher import RecursiveWatcher
 
 
 logger = logging.getLogger(__name__)

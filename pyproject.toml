@@ -1,6 +1,6 @@
 [project]
 name = "syncservers"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   { name="Zhuo Wang", email="zhuowang10@gmail.com" },
 ]
@@ -13,7 +13,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "asyncinotify>=4.0.9",
+    "asyncinotify>=4.2.0",
     "asynclcron>=1.0.0",
 ]
 
